@@ -26,8 +26,8 @@ Usage: java -jar swagger-diff.jar [options]
       swagger-diff tool version
 ```
 Here is one command-line example(`-old` and `-new` is required, `-v` and `-output-mode` is optional):
-```shell
-java -jar swagger-diff.jar \
+```shell 指定编码 避免windows乱码
+java -jar  -Dfile.encoding=UTF-8  swagger-diff.jar \
 -old http://petstore.swagger.io/v2/swagger.json \
 -new http://petstore.swagger.io/v2/swagger.json \
 -v 2.0 \

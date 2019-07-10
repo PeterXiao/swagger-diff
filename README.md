@@ -163,22 +163,24 @@ try {
 ![image](./swagger-diff.png)
 
 
-
+## 如何使用bash 加强
+```
 java -jar swagger-diff.jar -old http://uat.kong.com/service/v2/api-docs -new http://www.kong.com/service/v2/api-docs -v 2.0 -output-mode html > diff.html
 
 java -jar -Dfile.encoding=UTF-8 swagger-diff.jar -old http://www.kong.com/service/v2/api-docs -new swagger.json -v 2.0 -output-mode html > diff.html
+```
 
 
 wget
 
-1.函数 获取 时间
-2.函数 根据名字得到文件名
-3.函数 指定目录
-4. git 略
-5. scp  略
-6. 配置文件 略
++ 1.函数 获取 时间
++ 2.函数 根据名字得到文件名
++ 3.函数 指定目录
++ 4. git 略
++ 5. scp  略
++ 6. 配置文件 略
 
-
+```
 1.基础接口   postman restclient  jmeter
 
 2. 复杂场景 BDD with code kotlin ？ groovy ？ java
@@ -192,7 +194,8 @@ timeStamp=`date -d "$current" +%s`
 #将current转换为时间戳，精确到毫秒  
 currentTimeStamp=$((timeStamp*1000+`date "+%N"`/1000000)) 
 echo $currentTimeStamp
-
+```
+```
 #! /bin/bash
 #filename: test.sh
 
@@ -246,4 +249,4 @@ java -jar -Dfile.encoding=UTF-8 swagger-diff.jar -old http://www. kong.com/servi
 
 echo ' enjoy!'
 
-
+```
